@@ -1,0 +1,51 @@
+﻿@using Microsoft.EntityFrameworkCore.Storage
+@model CloudDevelopment.Models.productTable
+
+@{
+    ViewData["Title"] = "My Work";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My work</title>
+    <style>
+        /* Apply styles to all headings (h1, h2, h3) */
+        h1, h2, h3 {
+            font-size: 1.6em; /* Adjust as needed for desired size */
+        }
+
+        /* Apply styles to all paragraphs (p) */
+        p {
+            font-size: 1.2em; /* Adjust as needed for desired size */
+        }
+
+        /* Apply styles to buttons */
+        button {
+            font-size: 0.8em; /* Adjust as needed for desired size */
+        }
+
+        /* Reduce image size while maintaining aspect ratio */
+        .our-work-image {
+            width: 100px; /* Adjust width as needed */
+            height: auto; /* Automatically adjust height based on width */
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <h1>My Work</h1>
+
+    <form action="MyWork" method="post">
+        <p>Insert new products</p>
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="text" name="Price" placeholder="Price" required>
+        <input type="text" name="Category" placeholder="Category" required>
+        <input type="text" name="Availability" placeholder="Availability" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
